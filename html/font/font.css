@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Futura';
+    src: url('futura-medium.woff') format('woff'),
+    url('futura-medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('futura-bold.woff') format('woff'),
+    url('futura-bold.woff2') format('woff2');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('futura-mediumItalic.woff') format('woff'),
+    url('futura-mediumItalic.woff2') format('woff2');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('futura-condensedMedium.woff') format('woff'),
+    url('futura-condensedMedium.woff2') format('woff2');
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('futura-condensedExtraBold.woff') format('woff'),
+    url('futura-condensedExtraBold.woff2') format('woff2');
+    font-weight: bold;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Manteka';
+    src: url('manteka.woff') format('woff'),
+    url('manteka.woff2') format('woff2');
+}
