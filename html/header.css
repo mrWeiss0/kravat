@@ -52,7 +52,7 @@
     flex: 1 auto;
 }
 
-.items a:hover {
+.menu a:hover {
     background-color: rgba(255, 255, 255, .3);
 }
 
@@ -64,7 +64,8 @@
 
 .icon {
     display: block;
-    padding: 12px 20px;
+    padding: 8px 16px;
+    margin: 4px;
 }
 
 .icon object {
@@ -73,7 +74,7 @@
     pointer-events: none;
 }
 
-.search > div {
+.hide {
     position: absolute;
     width: 100%;
     background-color: black;
@@ -91,7 +92,7 @@
     box-sizing: border-box;
 }
 
-.search:not(:hover) > div:not(:focus-within) {
+.search:not(:hover) .hide:not(:focus-within) {
     display: none;
 }
 
@@ -140,7 +141,7 @@
         position: relative;
     }
 
-    .search > div {
+    .hide {
         display: flex;
         height: 100%;
         right: 100%;
@@ -179,7 +180,7 @@
         display: none;
     }
 
-    .search > div {
+    .hide {
         left: 0;
         top: 100%;
     }
