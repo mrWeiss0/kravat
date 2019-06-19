@@ -7,6 +7,11 @@ body {
     color: white;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .splash {
     height: 100vh;
     margin: 0;
@@ -29,8 +34,6 @@ body {
 
 .items a {
     display: block;
-    text-decoration: none;
-    color: inherit;
     padding: 10px 18px;
     margin: 2px 8px;
     flex: 1 auto;
@@ -48,10 +51,37 @@ body {
     margin: 4px;
 }
 
+a object {
+    pointer-events: none;
+}
+
 .icon object {
     height: 32px;
     display: block;
-    pointer-events: none;
+}
+
+.big {
+    font-size: 18pt;
+    padding: 68px 54px;
+    max-width: 580px;
+}
+
+.big h1 {
+    font-stretch: condensed;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 3em;
+}
+
+.more {
+    margin: 60px 0;
+}
+
+object.inline {
+    display: inline;
+    vertical-align: middle;
+    height: 1em;
+    margin-left: 1em;
 }
 
 @media screen and (max-width: 768px) {
