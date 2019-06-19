@@ -12,9 +12,13 @@
 }
 
 .menu {
-    display: flex;
     align-self: normal;
     flex: 1;
+}
+
+.menu > div {
+    display: flex;
+    background-color: black;
 }
 
 .items {
@@ -33,8 +37,6 @@
 .m > div {
     margin: 0 50px;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
 }
 
 .items a {
@@ -52,6 +54,7 @@
 
 .icons {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .icon {
@@ -98,8 +101,36 @@
 
 }
 
+@media not screen and (max-width: 768px) {
+    .menu > div {
+        height: 100%;
+    }
+}
+
 @media screen and (max-width: 768px) {
-    .menu {
+    .menu::before {
+        height: 100%;
+        display: block;
+        content: '';
+    }
+
+    .menu > div {
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        left: 0;
+    }
+
+    .items::before {
         display: none;
+    }
+
+    .m{
+        position: initial;
+    }
+
+    .m > div {
+        flex-direction: column;
+        margin: 0 auto;
     }
 }
