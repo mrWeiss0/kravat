@@ -8,18 +8,32 @@
 
 .f {
     display: flex;
+    margin: 16px 28px;
 }
 
-.right{
+.right {
     text-align: right;
 }
 
-#footer p{
+#footer p {
     font-size: .8em;
     padding: 0 16px;
     margin: 3.5em 4px 1em;
 }
 
-#footer .icons {
-    justify-content: flex-end;
+@media screen and (max-width: 1024px) {
+    .f {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #footer {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .right {
+        text-align: initial ;
+    }
 }
