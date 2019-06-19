@@ -12,6 +12,10 @@
     justify-content: space-between;
 }
 
+#kravat object {
+    height: 38px;
+}
+
 .menu {
     align-self: normal;
 }
@@ -54,6 +58,7 @@
 
 .icons {
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
 }
 
@@ -68,8 +73,26 @@
     pointer-events: none;
 }
 
-#kravat object {
-    height: 38px;
+.search > div {
+    position: absolute;
+    width: 100%;
+    background-color: black;
+}
+
+.search form {
+    margin: 12px 16px;
+}
+
+.search input {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+}
+
+.search:not(:hover) > div:not(:focus-within) {
+    display: none;
 }
 
 @media not screen and (max-width: 1024px) {
@@ -84,15 +107,10 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .items::before {
-        height: 100%;
-        display: block;
-        content: '';
-    }
-
     .m {
         position: absolute;
         left: 0;
+        top: 100%;
     }
 
     .m > div {
@@ -113,11 +131,25 @@
     .menu > .ddown {
         display: none;
     }
+
+    .m > div {
+        align-items: center;
+    }
+
+    .icons {
+        position: relative;
+    }
+
+    .search > div {
+        display: flex;
+        height: 100%;
+        right: 100%;
+        top: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .menu > .ddown {
-        height: 100%;
         display: flex;
         align-items: center;
     }
@@ -127,6 +159,7 @@
         width: 100%;
         position: absolute;
         left: 0;
+        top: 100%
     }
 
     .items::before {
@@ -144,5 +177,10 @@
 
     .menu:not(:hover) .content:not(:focus-within) {
         display: none;
+    }
+
+    .search > div {
+        left: 0;
+        top: 100%;
     }
 }
