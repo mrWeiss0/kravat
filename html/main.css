@@ -4,7 +4,6 @@ body {
     font-family: Futura, sans-serif;
     height: 100%;
     margin: 0;
-    color: white;
 }
 
 a {
@@ -66,29 +65,128 @@ a object {
 .big {
     font-size: 18pt;
     padding: 68px 54px;
-    max-width: 580px;
+    color: white;
+}
+
+h1 {
+    font-weight: normal;
+    font-stretch: condensed;
+    font-size: 3em;
+    margin: 0;
 }
 
 .big h1 {
-    font-stretch: condensed;
     text-transform: uppercase;
-    font-weight: normal;
-    font-size: 3em;
 }
 
-.more {
+.big p {
+    max-width: 460px;
+}
+
+.big .more {
     margin: 60px 0;
 }
 
-object.inline {
+.big .more svg {
+    fill: white;
+}
+
+.box {
+    margin: 72px 0;
+}
+
+.box > div {
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 0 36px;
+}
+
+.box .more {
+    color: red;
+}
+
+.box .more svg {
+    fill: red;
+}
+
+.special {
+    color: red;
+    font-family: "Manteka", serif;
+}
+
+.inline {
     display: inline;
     vertical-align: middle;
     height: 1em;
     margin-left: 1em;
 }
 
+.wide {
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+.band {
+    overflow: hidden;
+}
+
+.band svg {
+    width: 200%;
+    max-width: 600px;
+    display: block;
+    margin: 0 0 0 auto;
+}
+
+.band .cls-1 {
+    fill: #dd1908;
+    transform: translateY(-50%);
+}
+
+.band text {
+    fill: white;
+    font: 38pt Futura, sans-serif;
+    dominant-baseline: central;
+    transform: translateX(1em);
+}
+
+.wide form {
+    text-align: center;
+    margin: 36px 28px;
+    display: flex;
+    align-items: center;
+}
+
+.wide form svg {
+    fill: white;
+}
+
+.wide form input {
+    font-family: inherit;
+    padding: 6px 14px;
+    border-radius: 1000px;
+    flex: 1;
+}
+
+.wide > div {
+    flex: 1;
+    margin: 36px;
+}
+
+.wide .wl {
+
+}
+
+.wide .wr {
+    margin-right: 0;
+}
+
 @media screen and (max-width: 768px) {
     .icons {
         justify-content: center;
+    }
+
+    .wide {
+        flex-direction: column;
     }
 }
