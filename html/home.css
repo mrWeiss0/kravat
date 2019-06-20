@@ -1,0 +1,173 @@
+.big {
+    font-size: 18pt;
+    margin-top: 108px;
+    padding: 36px;
+    color: white;
+}
+
+.big h1 {
+    text-transform: uppercase;
+}
+
+.big p {
+    max-width: 460px;
+}
+
+.big .more {
+    margin: 60px 0;
+}
+
+.box, .pair {
+    margin: 72px 0;
+}
+
+.box > div {
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 0 36px;
+}
+
+.box .more {
+    color: red;
+}
+
+.box .more svg {
+    fill: red;
+}
+
+.wide {
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+.band {
+    overflow: hidden;
+}
+
+.band svg {
+    width: 200%;
+    max-width: 600px;
+    display: block;
+    margin: 0 0 0 auto;
+}
+
+.band .cls-1 {
+    fill: #dd1908;
+    transform: translateY(-50%);
+}
+
+.band text {
+    fill: white;
+    font: 38pt Futura, sans-serif;
+    dominant-baseline: central;
+    transform: translateX(1em);
+}
+
+.wide form {
+    text-align: center;
+    margin: 36px 28px;
+    display: flex;
+    align-items: center;
+}
+
+.wide form input {
+    font-family: inherit;
+    padding: 6px 14px;
+    border-radius: 1000px;
+    flex: 1;
+}
+
+.wide > div {
+    flex: 1;
+    margin: 36px;
+}
+
+.wide .wl {
+
+}
+
+.wide .wr {
+    margin-right: 0;
+}
+
+.pair {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pair > div {
+    margin: 28px;
+    position: relative;
+}
+
+.pair > div > * {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pair h1 {
+    margin: 20px 36px;
+}
+
+.holder {
+    margin: 8px 36px;
+}
+
+.mistery {
+    text-align: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.mistery object {
+    width: 40%;
+    margin: 0 16px
+}
+
+@media not screen and (max-width: 1024px) {
+    .big {
+        margin-top: 56px;
+    }
+
+    .pair > div:after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+    }
+
+    .pair > div {
+        flex: 0 1 640px;
+    }
+
+    .pair > div > * {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mistery {
+        margin: 80px 0;
+    }
+
+    .pair {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wide {
+        flex-direction: column;
+    }
+
+    .big {
+        margin-top: 56px;
+    }
+}
