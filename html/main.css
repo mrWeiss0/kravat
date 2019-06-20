@@ -7,7 +7,7 @@ body {
     color: white;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
@@ -58,6 +58,10 @@ a object {
 .icon object {
     height: 32px;
     display: block;
+}
+
+.small .icon object {
+    height: 24px;
 }
 
 .big {
