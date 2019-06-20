@@ -8,6 +8,7 @@
 
 .f {
     display: flex;
+    align-items: center;
     margin: 16px 28px;
 }
 
@@ -19,6 +20,16 @@
     font-size: .8em;
     padding: 0 16px;
     margin: 3.5em 4px 1em;
+}
+
+#footer > div {
+    flex: 1;
+    max-width: 480px;
+}
+
+#footer .items {
+    flex: 0 auto;
+    max-width: initial;
 }
 
 @media screen and (max-width: 1024px) {

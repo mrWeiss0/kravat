@@ -13,7 +13,7 @@ a {
 }
 
 .splash {
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     display: block;
     background-size: cover;
@@ -29,7 +29,6 @@ a {
     text-transform: capitalize;
     font-stretch: condensed;
     text-align: center;
-    flex: 1 auto;
 }
 
 .items a {
