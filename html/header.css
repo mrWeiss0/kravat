@@ -60,7 +60,7 @@
 }
 
 .search:not(:hover) .hide:not(:focus-within) {
-    display: none;
+    visibility: hidden;
 }
 
 @media not screen and (max-width: 1024px) {
@@ -147,7 +147,7 @@
     }
 
     .menu:not(:hover) .content:not(:focus-within) {
-        display: none;
+        visibility: hidden;
     }
 
     .hide {
