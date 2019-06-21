@@ -1,4 +1,4 @@
-.ship{
+.ship {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -21,4 +21,43 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.store {
+    color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1440px;
+    margin: 36px auto;
+    padding: 0 20px;
+    align-items: flex-end;
+}
+
+.store > div {
+    flex: 0 1 300px;
+    margin: 48px 36px;
+    text-align: center;
+}
+
+.store img {
+    display: block;
+    width: 100%;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 12px 0;
+    padding-bottom: 8px;
+}
+
+.addi {
+    background-color: black;
+    padding: 5px;
+}
+
+.addi object {
+    height: 1.5em;
 }
