@@ -11,6 +11,10 @@ a {
     color: inherit;
 }
 
+p {
+    line-height: 1.5;
+}
+
 .splash {
     min-height: 100vh;
     margin: 0;
@@ -148,6 +152,7 @@ h1 .inline {
     margin-top: 108px;
     padding: 36px;
     color: white;
+    text-shadow: rgba(12, 12, 24, 0.4) 1px 2px;
 }
 
 .big h1 {
