@@ -70,7 +70,7 @@ h1 {
 }
 
 .special {
-    color: red;
+    color: #dd1908;
     font-family: "Manteka", serif;
 }
 
@@ -107,11 +107,11 @@ h1 .inline {
 }
 
 .red {
-    color: red;
+    color: #dd1908;
 }
 
 .red svg {
-    fill: red;
+    fill: #dd1908;
 }
 
 .wide {
