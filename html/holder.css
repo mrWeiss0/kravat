@@ -1,0 +1,14 @@
+.feat{
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.feat h1 {
+    font-family: Manteka, serif;
+    text-transform: uppercase;
+}
+
+.feat object{
+    margin: 58px;
+    height: 120px;
+}
