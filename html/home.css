@@ -35,12 +35,6 @@
     fill: red;
 }
 
-.wide {
-    background-color: black;
-    color: white;
-    display: flex;
-}
-
 .band {
     overflow: hidden;
 }
@@ -62,33 +56,6 @@
     font: 38pt Futura, sans-serif;
     dominant-baseline: central;
     transform: translateX(1em);
-}
-
-.wide form {
-    text-align: center;
-    margin: 36px 28px;
-    display: flex;
-    align-items: center;
-}
-
-.wide form input {
-    font-family: inherit;
-    padding: 6px 14px;
-    border-radius: 1000px;
-    flex: 1;
-}
-
-.wide > div {
-    flex: 1;
-    margin: 36px;
-}
-
-.wide .wl {
-
-}
-
-.wide .wr {
-    margin-right: 0;
 }
 
 .pair {
@@ -163,10 +130,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    .wide {
-        flex-direction: column;
-    }
-
     .big {
         margin-top: 56px;
     }

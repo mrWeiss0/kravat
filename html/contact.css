@@ -9,3 +9,18 @@ h3 {
 .space {
     margin-bottom: 2em;
 }
+
+.center {
+    align-items: center;
+}
+
+.map {
+    overflow: hidden;
+    height: 600px;
+    max-height: 60vh;
+}
+
+amp img {
+    display: block;
+    height: 100%;
+}
