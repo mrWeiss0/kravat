@@ -1,0 +1,24 @@
+.ship{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 48px;
+    flex-wrap: wrap;
+}
+
+.ship object {
+    height: 100px;
+    margin: 0 28px;
+    padding-bottom: 20px;
+}
+
+.ship h1 {
+    flex: 1;
+    height: 84px;
+    padding: 0 24px;
+    white-space: nowrap;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
