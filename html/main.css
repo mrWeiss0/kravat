@@ -86,6 +86,33 @@ h1 .inline {
     font-size: .33em;
 }
 
+.fd {
+    display: flex;
+    margin: 108px auto;
+    padding: 0 60px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+.fd > div {
+    flex: 0 1 450px;
+    margin: 24px auto;
+}
+
+.fd img {
+    display: block;
+    width: 100%;
+}
+
+.red {
+    color: red;
+}
+
+.red svg {
+    fill: red;
+}
+
 @media screen and (max-width: 768px) {
     .icons {
         justify-content: center;
