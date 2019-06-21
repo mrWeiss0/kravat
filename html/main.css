@@ -143,6 +143,45 @@ h1 .inline {
     margin-right: 0;
 }
 
+.big {
+    font-size: 18pt;
+    margin-top: 108px;
+    padding: 36px;
+    color: white;
+}
+
+.big h1 {
+    text-transform: uppercase;
+}
+
+.big p {
+    max-width: 460px;
+}
+
+.big .more {
+    margin: 60px 0;
+}
+
+.diff {
+    position: relative;
+}
+
+.diff h1 {
+    position: absolute;
+    bottom: 0;
+    font-family: Manteka, serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 48pt;
+    margin: 72px;
+}
+
+@media not screen and (max-width: 1024px) {
+    .big {
+        margin-top: 56px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .wide {
         flex-direction: column;
@@ -150,5 +189,9 @@ h1 .inline {
 
     .icons {
         justify-content: center;
+    }
+
+    .big {
+        margin-top: 56px;
     }
 }

@@ -16,11 +16,9 @@ h3 {
 
 .map {
     overflow: hidden;
-    height: 600px;
-    max-height: 60vh;
 }
 
-amp img {
+.map img {
     display: block;
-    height: 100%;
+    width: 100%;
 }
